@@ -1,7 +1,7 @@
-MozIlluminate [![Build Status](https://travis-ci.org/MozIlluminate/mozilluminate-demo.svg)](https://travis-ci.org/MozIlluminate/mozilluminate-demo) 
+MozIlluminate [![Build Status](https://travis-ci.org/MozIlluminate/MozIlluminate.svg)](https://travis-ci.org/MozIlluminate/MozIlluminate) 
 ============================
 
-This repo is an example of MozIlluminate, our next-generation test case management system for Firefox OS QA
+MozIlluminate, our next-generation test case management system for Firefox OS QA
 
 ##How it works
 Our goal is to enable user to write test cases in source code repos like [mozilla-b2g/gaia](https://github.com/mozilla-b2g/gaia). The test case will be in various formats, like text instructions, matrices (implemented), mindmaps or UI state diagrams. (Only plain text and tables are supported right now.) Every commit will trigger a automatic build on our [Travis CI Server](https://travis-ci.org/MozIlluminate/mozilluminate-demo/builds). The automatic build will transform and push the test cases s into [MozTrap](https://moztrap.mozilla.org/) (During the beta testing phase, the test cases will be pushed to [MozTrap-dev server](https://moztrap-dev.allizom.org/))
@@ -11,13 +11,13 @@ This repo replicates the folder structure for [mozilla-b2g/gaia](https://github.
 
 1. Clone this repo
 2. Create/Edit test cases under `apps/\<app name\>/test/manual/test_\<something\>.md` ( 
- Check [`apps/example/test/manual/test_example.md`](https://github.com/MozIlluminate/mozilluminate-demo/blob/master/apps/example/test/manual/test_example.md) for example)
+ Check [`apps/example/test/manual/test_example.md`](https://github.com/MozIlluminate/MozIlluminate/blob/master/apps/example/test/manual/test_example.md) for example)
 3. `git add`, `git commit` and `git push` (You are suggested to create a new branch)
-4. Create a pull request to this repo. A automatic syntax check will be triggered on [Travis CI](https://travis-ci.org/MozIlluminate/mozilluminate-demo/pull_requests)
+4. Create a pull request to this repo. A automatic syntax check will be triggered on [Travis CI](https://travis-ci.org/MozIlluminate/MozIlluminate/pull_requests)
 5. If the syntax check failed, go back to step 2 and fix your syntax.
 6. Ask for peer review.
 7. After your pull request is merged by the reviewer, go the the [Travis CI Server](https://travis-ci.org/MozIlluminate/mozilluminate-demo/builds) and see your modifications being pushed to MozTrap.
-5. After the build finished. Go to [MozTrap-dev server](https://moztrap-dev.allizom.org/manage/cases/) to execute your test cases.
+5. After the build finished. Go to [MozTrap](https://moztrap.mozilla.org/manage/cases/) to execute your test cases.
 
 ## Markdown Style Guide
 You may want to read the [syntax guide](https://github.com/JohanLorenzo/markdown-testfile-to-json#syntax)
@@ -33,11 +33,7 @@ The test case body is in a simplified [cucumber](https://cucumber.io/) format. Y
   * mz_api_key: MozTrap API key
   * Display value in build log = OFF
 
-##Known Issues
-* We will support WHEN/THEN syntax (instrucation/expectation) very soon!
-* We will support table style test cases very soon.
-
 ##Contribute
-* [Report bugs](https://github.com/MozIlluminate/mozilluminate-demo/issues/new)
+* [Report bugs](https://github.com/MozIlluminate/MozIlluminate/issues/new)
 * Join the discussion in IRC channel `#moztrap-enhancement`
 * Join the discussion in the [project trello board](https://trello.com/b/4GQutOUA/git-moztrap)
