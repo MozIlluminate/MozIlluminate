@@ -184,7 +184,8 @@ def main():
 
     #parsed_json_f = tempfile.NamedTemporaryFile()
 
-    mtapi.mtorigin = "https://moztrap-dev.allizom.org"
+    #mtapi.mtorigin = "https://moztrap-dev.allizom.org"
+    mtapi.mtorigin = "https://moztrap.mozilla.org"
 #The mz_user_name and mz_api_key is set in Travis CI
 #mtapi.convert_mark_file_into_moztrap(tmpfile, {'username': os.getenv("mz_user_name"), 'api_key': os.getenv("mz_api_key")})
     #mtapi.load_json_into_moztrap(parsed_json_f.name, {'username': os.getenv("mz_user_name"), 'api_key': os.getenv("mz_api_key")})
